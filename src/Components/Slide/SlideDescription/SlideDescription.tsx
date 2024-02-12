@@ -1,5 +1,5 @@
-import React from "react";
-
-export default function SlideDescription() {
-  return <div>SlideDescription</div>;
+import React, { ComponentProps } from "react";
+type SlideDescriptionProps = ComponentProps<"div">
+export default function SlideDescription({children, ...props}: SlideDescriptionProps) {
+  return <div {...props}>{children}</div>;
 }

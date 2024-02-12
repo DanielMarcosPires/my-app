@@ -9,8 +9,8 @@ export default function Header() {
   return (
     <div className="relative z-10">
       {isActive && (
-        <div className=" w-full h-screen bg-black/40 fixed">
-          <nav className="flex justify-around items-center w-full h-28 bg-white text-black border border-red-500 shadow z-30 transition ">
+        <div onClick={() => setActive(!isActive)} className="w-full h-screen bg-black/40 fixed">
+          <nav className="flex z-50 justify-around items-center w-full h-28 bg-white text-black shadow-2xl transition ">
             <button onClick={() => setActive(!isActive)}>
               <X size={30}/>
             </button>
